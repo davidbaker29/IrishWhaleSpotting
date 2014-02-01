@@ -1,0 +1,13 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/whale_list"
+    android:name="com.baker.david.irishwhalespotting.ui.species.CategoryListFragment"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:textSize="16sp"
+    android:textColor="@color/royal_blue"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    tools:context=".WhaleListActivity"
+    tools:layout="@android:layout/list_content" />
+

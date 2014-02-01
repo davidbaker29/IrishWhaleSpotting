@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Irish Whale Spotting</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="section_latest_news_heading">Latest News</string>
+    <string name="section_latest_sightings_heading">Latest Sightings</string>
+    <string name="section_latest_strandings_heading">Latest Strandings</string>
+    <string name="section_report_sighting_heading">Report Sighting</string>
+    <string name="section_report_stranding_heading">Report Sighting</string>
+    <string name="section_species_heading">Species</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="splash_text">Whale Tail</string>
+    <string name="action_settings">Settings</string>
+    <string name="species">Browse Species</string>
+    <string name="report">Report Sighting</string>
+    <string name="website">Visit our Website</string>
+    <string name="title_category_list">Categories</string>
+    <string name="title_category_detail">Category Details</string>
+    <string name="title_activity_whale_list">List of Whales</string>
+    <string name="fin">Fin Whale</string>
+    <string name="humpback">Humpback Whale</string>
+    <string name="killer">Killer Whale </string>
+    <string name="title_activity_home">Select Species</string>
+    <string name="title_activity_submit_sighting">Submit Sighting</string>
+    <string name="person_name">Name:</string>
+    <string name="name_hint">Enter your full name</string>
+    <string name="person_membership">Are you an IWDG member?</string>
+    <string name="iwdg_member_yes">Yes</string>
+    <string name="iwdg_member_no">No</string>
+    <string name="event_date">Sighting date *</string>
+    <string name="latitude_prompt">Latitude</string>
+    <string name="longitude_prompt">Longitude</string>
+    <string name="person_phone">Phone</string>
+    <string name="phone_hint">Enter your phone number</string>
+    <string name="person_email">Email</string>
+    <string name="email_hint">Enter your email address</string>
+    <string name="contact_details_heading">Contact Details</string>
+    <string name="date_header">Sighting Date</string>
+    <string name="location_header">Location and Submission type</string>
+    <string name="pick_date">Change Date</string>
+    <string name="sighting_overview">Sighting Overview</string>
+    <string name="species_prompt">Species seen *</string>
+    <string name="species_hint">Enter species</string>
+    <string name="sighting_location">Location *</string>
+    <string name="sighting_location_hint">Enter location</string>
+    <string name="attach_photo">Attach Photo</string>
+    <string name="county_prompt">County *</string>
+    <string name="county_spinner_prompt">Choose county</string>
+    <string name="submission_type">Submission type</string>
+    <string name="radio_submission_casual">Casual</string>
+    <string name="radio_submission_constant_sighting">Constant effort scheme (with sightings)</string>
+    <string name="radio_submission_constant_no_sighting">Constant effort scheme (no sightings)</string>
+    <string name="number_seen_prompt">Number seen *</string>
+    <string name="number_seen_hint">Enter no. seen</string>
+    <string name="optics_prompt">Optics used</string>
+    <string name="optics_spinner_prompt">Choose optics used</string>
+
+    <string-array name="optics_array">
+        <item>none</item>
+        <item>binoculars</item>
+        <item>spotting scope</item>
+        <item>binoculars and spotting scope</item>
+    </string-array>
+    <string-array name="county_array">
+        <item></item>
+        <item>Antrim</item>
+        <item>Clare</item>
+        <item>Cork</item>
+        <item>Derry</item>
+        <item>Donegal</item>
+        <item>Down</item>
+        <item>Dublin</item>
+        <item>Galway</item>
+        <item>Kerry</item>
+        <item>Kilkenny</item>
+        <item>Limerick</item>
+        <item>Louth</item>
+        <item>Mayo</item>
+        <item>Meath</item>
+        <item>Sligo</item>
+        <item>Waterford</item>
+        <item>Wexford</item>
+        <item>Wicklow</item>
+    </string-array>
+
+    <string name="notes_prompt">Notes (markings, length, colour, fin shape etc.)</string>
+    <string name="notes_hint">Enter notes</string>
+    <string name="submit_sighting">Submit Sighting</string>
+    <string name="news">Latest News</string>
+    <string name="title_activity_latest_news">Latest News</string>
+    <string name="title_activity_latest_news_item_details">News Item</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_strandings">StrandingsActivity</string>
+    <string name="strandings">Coming Soon</string>
+    <string name="title_activity_latest_stranding_item_details">Stranding Details</string>
+    <string name="title_activity_latest_sighting_item_details">Sighting Details</string>
+    <string name="report_strandings_heading">Under construction</string>
+    <string name="title_activity_splash_screen">Irish Whale Spotting</string>
+	<string name="whale_image">Whale Image</string>
+</resources>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+      xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+      android:id="@+id/scroll" 
+      android:padding="8dp"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/contactDetailsHeading"
+        android:textColor="@color/royal_blue"
+    	android:background="@color/grey"
+    	android:padding="8dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textStyle="bold"
+    	style="?android:attr/textAppearanceMedium"
+        android:text="@string/contact_details_heading" />
+
+   <!-- TextView
+        android:id="@+id/namePrompt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="4dp"
+    	style="?android:attr/textAppearanceMedium"
+        android:text="@string/person_name" />
+   
+   <EditText
+    	android:id="@+id/personName"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:hint="@string/name_hint"
+   	    android:inputType="text" /-->
+   
+   <TextView
+        android:id="@+id/phonePrompt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="8dp"
+    	style="?android:attr/textAppearanceMedium"
+        android:text="@string/person_phone" 
+        android:layout_below="@+id/contactDetailsHeading"/>
+   
+   <EditText
+    	android:id="@+id/phoneNumber"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:hint="@string/phone_hint"
+    	android:layout_below="@+id/contactDetailsHeading"
+   	    android:layout_toRightOf="@+id/phonePrompt" />
+   
+    <TextView
+        android:id="@+id/memberPrompt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="8dp"
+	    android:paddingTop="16dp"
+    	style="?android:attr/textAppearanceMedium"
+    	android:layout_below="@+id/phonePrompt"
+        android:text="@string/person_membership" />
+
+   <RadioGroup 
+    android:id="@+id/iwdg_member"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:layout_below="@+id/memberPrompt"
+    android:orientation="horizontal">
+    	<RadioButton android:id="@+id/iwdg_member_yes"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/iwdg_member_yes"/>
+	    <RadioButton android:id="@+id/iwdg_member_no"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/iwdg_member_no"/>
+   </RadioGroup>
+   
+   <!--  TextView
+        android:id="@+id/emailPrompt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="4dp"
+    	style="?android:attr/textAppearanceMedium"
+        android:text="@string/person_email" />
+   
+   <EditText
+    	android:id="@+id/email"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:hint="@string/email_hint"
+    	android:layout_marginBottom="12dp"
+   	    android:inputType="textEmailAddress" /-->
+   
+   <TextView
+        android:id="@+id/dateHeader"
+        android:textColor="@color/royal_blue"
+    	android:background="@color/grey"
+    	android:padding="8dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+    	style="?android:attr/textAppearanceMedium"
+    	android:textStyle="bold"
+    	android:layout_below="@+id/iwdg_member"
+        android:text="@string/date_header" />
+   
+    <TextView
+        android:id="@+id/datePrompt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="8dp"
+    	style="?android:attr/textAppearanceMedium"
+    	android:layout_below="@+id/dateHeader"
+        android:text="@string/event_date" />
+
+    <TextView
+    	android:id="@+id/sightingDate"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:padding="8dp"
+    	style="?android:attr/textAppearanceMedium"
+    	android:layout_below="@+id/dateHeader"
+    	android:layout_toRightOf="@+id/datePrompt" />
+        
+    <Button 
+        android:id="@+id/btnDate"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:padding="8dp"
+    	android:layout_marginBottom="12dp"
+   	    android:text="@string/pick_date" 
+   	    android:layout_below="@+id/datePrompt" />
+    
+     <TextView
+        android:id="@+id/locationHeader"
+        android:textColor="@color/royal_blue"
+    	android:background="@color/grey"
+    	android:padding="8dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+    	style="?android:attr/textAppearanceMedium"
+    	android:textStyle="bold"
+    	android:layout_below="@+id/btnDate"
+        android:text="@string/location_header" />
+    
+    <TextView
+        android:id="@+id/locationPrompt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="8dp"
+    	style="?android:attr/textAppearanceMedium"
+    	android:layout_below="@+id/locationHeader"
+        android:text="@string/sighting_location" />
+
+    <EditText
+    	android:id="@+id/location"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:hint="@string/sighting_location_hint"
+    	android:layout_below="@+id/locationHeader"
+    	android:layout_toRightOf="@+id/locationPrompt" />
+    
+    <TextView
+        android:id="@+id/county_prompt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="8dp"
+    	style="?android:attr/textAppearanceMedium"
+    	android:layout_below="@+id/locationPrompt"
+        android:text="@string/county_prompt" />
+   
+   <Spinner
+    	android:id="@+id/county_spinner"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/location"
+    	android:spinnerMode="dialog"
+    	android:prompt="@string/county_spinner_prompt"
+    	android:layout_toRightOf="@+id/county_prompt" />
+       
+   <TextView
+        android:id="@+id/latitudePrompt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="8dp"
+    	style="?android:attr/textAppearanceMedium"
+    	android:layout_below="@+id/county_prompt"
+        android:text="@string/latitude_prompt" />
+   
+   <EditText
+    	android:id="@+id/latitude"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/county_spinner"
+    	android:layout_toRightOf="@+id/latitudePrompt"
+   	    android:inputType="text" />
+   
+   <TextView
+        android:id="@+id/longitudePrompt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="8dp"
+    	style="?android:attr/textAppearanceMedium"
+    	android:layout_below="@+id/latitudePrompt"
+        android:text="@string/longitude_prompt" />
+   
+   <EditText
+    	android:id="@+id/longitude"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/latitude"
+    	android:layout_toRightOf="@+id/longitudePrompt"
+   	    android:inputType="text" />
+   
+   <TextView
+        android:id="@+id/submission_type"
+    	android:padding="8dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+    	style="?android:attr/textAppearanceMedium"
+    	android:layout_below="@+id/longitudePrompt"
+        android:text="@string/submission_type" />
+   
+   <RadioGroup 
+    android:id="@+id/radio_submission_type"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:layout_below="@+id/submission_type"
+    android:orientation="vertical">
+    	<RadioButton android:id="@+id/radio_submission_casual"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/radio_submission_casual"/>
+	    <RadioButton android:id="@+id/radio_submission_constant_sighting"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/radio_submission_constant_sighting"/>
+	    <RadioButton android:id="@+id/radio_submission_constant_no_sighting"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/radio_submission_constant_no_sighting"/>
+   </RadioGroup>
+   
+   <TextView
+        android:id="@+id/sighting_overview"
+        android:textColor="@color/royal_blue"
+    	android:background="@color/grey"
+    	android:padding="8dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+    	style="?android:attr/textAppearanceMedium"
+    	android:textStyle="bold"
+    	android:layout_below="@+id/radio_submission_type"
+        android:text="@string/sighting_overview" />
+   
+   <TextView
+        android:id="@+id/speciesPrompt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="8dp"
+    	style="?android:attr/textAppearanceMedium"
+    	android:layout_below="@+id/sighting_overview"
+        android:text="@string/species_prompt" />
+   
+   <EditText
+    	android:id="@+id/species"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:hint="@string/species_hint"
+    	android:layout_below="@+id/sighting_overview"
+    	android:layout_toRightOf="@+id/speciesPrompt"
+   	    android:inputType="text" />
+   
+   <TextView
+        android:id="@+id/numberSeenPrompt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="8dp"
+    	style="?android:attr/textAppearanceMedium"
+    	android:layout_below="@+id/speciesPrompt"
+        android:text="@string/number_seen_prompt" />
+   
+   <EditText
+    	android:id="@+id/numberSeen"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:hint="@string/number_seen_hint"
+    	android:layout_below="@+id/species"
+    	android:layout_toRightOf="@+id/numberSeenPrompt"
+   	    android:inputType="number" />
+   
+    <Button 
+        android:id="@+id/btnPhoto"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:padding="8dp"
+    	android:layout_marginBottom="12dp"
+   	    android:text="@string/attach_photo" 
+   	    android:layout_below="@+id/numberSeenPrompt" />
+   
+   <TextView
+        android:id="@+id/optics_prompt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="8dp"
+    	style="?android:attr/textAppearanceMedium"
+    	android:layout_below="@+id/btnPhoto"
+        android:text="@string/optics_prompt" />
+   
+   <Spinner
+    	android:id="@+id/optics_spinner"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/btnPhoto"
+    	android:layout_toRightOf="@+id/optics_prompt"
+    	android:spinnerMode="dialog"
+    	android:prompt="@string/optics_spinner_prompt" />
+   
+   <TextView
+        android:id="@+id/notes_prompt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="8dp"
+    	style="?android:attr/textAppearanceMedium"
+    	android:layout_below="@+id/optics_prompt"
+        android:text="@string/notes_prompt" />
+   
+   <EditText
+    	android:id="@+id/notes"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:hint="@string/notes_hint"
+    	android:layout_marginBottom="12dp"
+    	android:layout_below="@+id/notes_prompt"
+   	    android:inputType="text" />
+   
+   <Button
+        android:id="@+id/btnSubmitSighting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notes"
+        android:text="@string/submit_sighting"/>
+
+</RelativeLayout>
+</ScrollView>
